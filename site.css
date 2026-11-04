@@ -238,8 +238,8 @@ code { font: 14px "JetBrains Mono", ui-monospace, Consolas, monospace; backgroun
 /* Safe mode, Deep mode and AI: white section, cards with an icon, title, tag, description and a checklist */
 .modes { padding: 72px 0; background: var(--paper); }
 .modes .wrap { max-width: 1240px; }
-.modes h2 { margin-bottom: 16px; }
-.modes .lead-sm { font-size: 16px; line-height: 1.72; margin-bottom: 40px; max-width: none; }
+.modes h2 { margin-bottom: 16px; text-align: center; }
+.modes .lead-sm { font-size: 16px; line-height: 1.72; margin: 0 auto 40px; max-width: 52em; text-align: center; }
 .mode-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
 @media (max-width: 899px) { .mode-grid { grid-template-columns: 1fr; max-width: 520px; } }
 .mode-card { background: var(--paper); border: 1px solid var(--divider); border-radius: var(--radius); box-shadow: 0 2px 16px rgba(99, 102, 241, .08); padding: 36px 36px 32px; }
