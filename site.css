@@ -287,8 +287,8 @@ code { font: 14px "JetBrains Mono", ui-monospace, Consolas, monospace; backgroun
 .mode-level { margin-bottom: 20px; }
 .mode-eyebrow { flex: none; font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--acc); margin: 0 0 6px; }
 .mode-card > .mode-eyebrow { flex: none; border: 0; padding: 0; color: var(--acc); font-size: 13px; line-height: 1.4; margin: 0 0 6px; }
-.mode-plus { display: block; font-size: 16px; font-style: italic; font-weight: 600; color: var(--acc); background: var(--paper); border-left: 4px solid var(--acc); border-radius: 6px; padding: 8px 12px; }
-.lvl-1 .mode-plus { font-style: normal; }
+.mode-plus { font-size: 15px; font-weight: 600; color: var(--text-2); }
+.mode-plus b { color: var(--acc); font-size: 17px; margin-right: 2px; }
 .mode-card[class*="lvl-"] .mode-points li::before { border-color: var(--acc); }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .mode-card.lvl-1 { --acc: #93B4FF; --tint: #141B3A; --edge: #26336B; }
