@@ -206,46 +206,49 @@
 
     <section class="modes" id="modes" aria-labelledby="modes-title">
       <div class="wrap">
-        <h2 id="modes-title">Find what a page scan misses</h2>
-        <p class="lead-sm">Many accessibility problems sit behind a click: in menus, dialogs, forms and error messages. Turn on the testing you need.</p>
+        <h2 id="modes-title">Test more than the page</h2>
+        <p class="lead-sm">A page check only sees what’s on screen when the page opens. Each mode goes one step further: Safe mode opens what’s hidden behind clicks, Deep mode uses your forms the way people do, and AI review checks whether the words and images actually make sense. Turn on the ones you need.</p>
         <ul class="mode-grid">
           <li class="mode-card">
             <svg class="mode-icon" aria-hidden="true" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l16 6v12c0 10-7 17-16 20-9-3-16-10-16-20V11z"/><path d="M17 24l5 5 9-10"/></svg>
             <h3>Safe mode</h3>
-            <span class="mode-tag">Looks, never changes anything</span>
-            <p>Opens every menu, tab and dialog and checks each one. It only looks, so you can run it on a live site.</p>
+            <span class="mode-tag">Works on live sites</span>
+            <p>Also checks menus, tabs and pop-ups. Changes nothing.</p>
+            <p class="mode-finds">What it finds</p>
             <ul class="mode-points">
-              <li>Opens menus, tabs, accordions and dialogs</li>
-              <li>Checks each new screen for every rule</li>
-              <li>Finds dialogs that lose keyboard focus</li>
-              <li>Nothing typed, nothing saved</li>
-              <li>Safe on live sites</li>
+              <li>Buttons and menu items with no name, inside menus and pop-ups</li>
+              <li>Pop-ups that don’t move keyboard focus into them</li>
+              <li>Keyboard focus that escapes an open pop-up</li>
+              <li>Sub-menus that only open on mouse hover</li>
+              <li>Low contrast inside dropdowns and panels</li>
             </ul>
           </li>
           <li class="mode-card">
             <svg class="mode-icon" aria-hidden="true" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="30" height="36" rx="3"/><path d="M12 15h18M12 23h18M12 31h10"/><path d="M30 30l12 6-5 2-2 5z"/></svg>
             <h3>Deep mode</h3>
-            <span class="mode-tag">Tests the app like a QA tester</span>
-            <p>Fills in your forms the wrong way on purpose and checks that every error helps people fix it. Then it cancels, so nothing is saved.</p>
+            <span class="mode-tag">Nothing is saved</span>
+            <p>Tries your forms with wrong answers to test the error messages.</p>
+            <p class="mode-finds">What it finds</p>
             <ul class="mode-points">
-              <li>Is each error shown next to its field?</li>
-              <li>Is it read out to screen readers?</li>
-              <li>Does it say how to fix it?</li>
-              <li>Never creates data, always cancels</li>
-              <li>Skips your Never click list (Delete, Log out, Pay…)</li>
+              <li>Errors shown only in red, with no words</li>
+              <li>Errors that don’t say how to fix them</li>
+              <li>Errors and “Saved” messages screen readers never hear</li>
+              <li>Keyboard focus lost after a form closes</li>
+              <li>Problems on every screen it reaches, with the clicks that led there</li>
             </ul>
           </li>
           <li class="mode-card">
             <svg class="mode-icon" aria-hidden="true" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6l3.5 9.5L33 19l-9.5 3.5L20 32l-3.5-9.5L7 19l9.5-3.5z"/><path d="M36 28l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></svg>
             <h3>AI review</h3>
-            <span class="mode-tag">Judges what rules can’t</span>
-            <p>Reads your page the way a person would. Finds alt text, links and labels that exist but don’t make sense, and writes the fix.</p>
+            <span class="mode-tag">Free, on your computer</span>
+            <p>Checks whether image descriptions, links and labels make sense.</p>
+            <p class="mode-finds">What it finds</p>
             <ul class="mode-points">
-              <li>Alt text that really describes the image</li>
-              <li>Links, headings and labels that make sense</li>
-              <li>A code fix for each issue</li>
-              <li>Chrome’s built-in AI, free</li>
-              <li>Runs on your computer, nothing sent anywhere</li>
+              <li>Alt text like “image1.png” or “photo” that says nothing</li>
+              <li>Decorative images that screen readers still read out</li>
+              <li>“Click here” and “Read more” links</li>
+              <li>Headings that don’t describe what’s under them</li>
+              <li>Page titles that don’t say where you are</li>
             </ul>
           </li>
         </ul>

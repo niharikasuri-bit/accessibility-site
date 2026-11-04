@@ -275,3 +275,4 @@ code { font: 14px "JetBrains Mono", ui-monospace, Consolas, monospace; backgroun
 .ill .s1 { fill: none; stroke: var(--primary); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
 .ill .s2 { fill: none; stroke: var(--brand-border); stroke-width: 3; stroke-linecap: round; }
 .ill .t { fill: var(--primary); font: 700 11px "DM Sans", sans-serif; }
+.mode-card > .mode-finds { border: 0; padding: 0; font-size: 13px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
