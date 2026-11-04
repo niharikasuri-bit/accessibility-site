@@ -284,16 +284,19 @@ code { font: 14px "JetBrains Mono", ui-monospace, Consolas, monospace; backgroun
 .mode-badge { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 14px; background: var(--acc); margin-bottom: 18px; flex: none; }
 .mode-badge .mode-icon { color: #FFFFFF; width: 30px; height: 30px; margin: 0; }
 .mode-card[class*="lvl-"] .mode-tag { background: var(--paper); color: var(--acc); box-shadow: inset 0 0 0 1px var(--edge); }
-.mode-level { margin-bottom: 18px; }
-.mode-bar { display: block; height: 8px; border-radius: 999px; background: rgba(14, 22, 93, .08); overflow: hidden; margin-bottom: 10px; }
-.mode-bar > span { display: block; height: 100%; border-radius: inherit; background: var(--acc); }
-.mode-plus { font-size: 15px; font-weight: 600; color: var(--text-2); }
-.mode-plus b { color: var(--acc); font-size: 17px; margin-right: 2px; }
+.mode-level { margin-bottom: 20px; }
+.mode-eyebrow { flex: none; font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--acc); margin: 0 0 6px; }
+.mode-card > .mode-eyebrow { flex: none; border: 0; padding: 0; color: var(--acc); font-size: 13px; line-height: 1.4; margin: 0 0 6px; }
+.mode-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-bottom: 12px; }
+.mode-steps > span { height: 10px; border-radius: 999px; background: rgba(14, 22, 93, .09); }
+.mode-steps > span.on { background: var(--acc); }
+.mode-plus { display: block; font-size: 16px; font-style: italic; font-weight: 600; color: var(--acc); background: var(--paper); border-left: 4px solid var(--acc); border-radius: 6px; padding: 8px 12px; }
+.lvl-1 .mode-plus { font-style: normal; }
 .mode-card[class*="lvl-"] .mode-points li::before { border-color: var(--acc); }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .mode-card.lvl-1 { --acc: #93B4FF; --tint: #141B3A; --edge: #26336B; }
   :root:not([data-theme="light"]) .mode-card.lvl-2 { --acc: #C4B5FD; --tint: #1C1638; --edge: #3A2D6B; }
   :root:not([data-theme="light"]) .mode-card.lvl-3 { --acc: #86EFAC; --tint: #10251A; --edge: #1F4A31; }
   :root:not([data-theme="light"]) .mode-badge .mode-icon { color: #0B0F33; }
-  :root:not([data-theme="light"]) .mode-bar { background: rgba(255, 255, 255, .1); }
+  :root:not([data-theme="light"]) .mode-steps > span:not(.on) { background: rgba(255, 255, 255, .12); }
 }
