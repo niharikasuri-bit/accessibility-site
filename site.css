@@ -149,6 +149,7 @@ code { font: 14px "JetBrains Mono", ui-monospace, Consolas, monospace; backgroun
    keyboard focus a navy panel shows the title and details. */
 .tests { background: linear-gradient(135deg, #EEF1FF 0%, #F0F4FF 40%, #E8F4FD 100%); }
 .tests .wrap { max-width: 1072px; }
+.tests + .tests { padding-top: 0; }
 .tests h2 { margin-bottom: 16px; }
 .tests .lead-sm { font-size: 16px; line-height: 1.72; margin-bottom: 40px; max-width: none; }
 .phil-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
